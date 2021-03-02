@@ -1,0 +1,27 @@
+.site{
+    display: grid;
+    /*Repite 4 veces 1fr desppues 1px y asi sucesivamente 
+    grid-template-columns: repeat(4,1fr 10px);*/
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: auto 1fr 3fr;
+}
+
+.masthead{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.page-title{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.main-content{
+    grid-column: 1/2;
+    grid-row:2/4;
+}
+
+.footer-content{
+    grid-column: 1/4;
+    grid-row:4;;
+}
